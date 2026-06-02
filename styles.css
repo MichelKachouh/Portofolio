@@ -1,30 +1,5 @@
-body {
-    background-color: #0b090a;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    opacity: 0;
-            animation: fadeIn 2s forwards;
-        }
-        @keyframes fadeIn {
-            to {
-                opacity: 1;
-            }
-}
-
-.avatar {
-    width: 150px;
-}
-
-.card {
-    width: 500px;
-    height:200px;
-    background-color:#ba181b;
-    margin: 350px auto;
-    padding: 20px;
-    display: flex;
-    justify-content: space-around;
-    text-align: center;
-    box-shadow: 6px 4px 4px #660708;
-}
-.creds{
-    padding-top:25px;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
