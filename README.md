@@ -1,6 +1,6 @@
 # Mini Portfolio Homepage
 
-A responsive portfolio homepage built with HTML, CSS, and JavaScript as part of my web development journey through The Odin Project.
+A responsive portfolio homepage built with HTML, CSS, and JavaScript as part of my web development journey
 
 ## Overview
 
