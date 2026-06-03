@@ -76,4 +76,4 @@ Live Demo: Coming Soon
 
 Michel Kachouh
 
-Created as part of The Odin Project curriculum.
+Created as part of my practice journey.

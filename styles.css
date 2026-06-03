@@ -3,3 +3,202 @@
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    font-family: 'Poppins', sans-serif;
+    background: #eef0f6;
+    color: #1d1d1d;
+    min-height: 100vh;
+}
+#nav-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 32px;
+    margin: 20px auto 0;
+    width: min(1080px, calc(100% - 32px));
+    background: rgba(255, 255, 255, 0.94);
+    box-shadow: 0 18px 40px rgba(15, 23, 42, 0.12);
+    border-radius: 999px;
+    position: sticky;
+    top: 16px;
+    z-index: 10;
+}
+#nav-section > nav > ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    list-style: none; 
+}
+#nav-section > nav > ul > li > a{
+    text-decoration: none;
+    color: #333333;
+    font-weight: 600;
+    padding: 10px 18px;
+    border: 2px solid transparent;
+    border-radius: 18px;
+    transition: all 0.25s ease;
+}
+#nav-section > nav > ul > li > a:hover{
+    background: black;     /* Changes background color on hover */
+    color: white;         /* Changes text color on hover */
+    border-color: black;  /* Keeps the border color consistent on hover */
+}
+#dark-light-toggle{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    color: #1d1d1d;
+    font-weight: 700;
+    padding: 12px 22px;
+    border: 2px solid #1d1d1d;
+    border-radius: 999px;
+    background: #fff;
+    cursor: pointer;
+    box-shadow: 0 16px 35px rgba(20, 24, 40, 0.08);
+    transition: all 0.25s ease;
+}
+#dark-light-toggle:hover{
+    background: #111;
+    color: #fff;
+    border-color: #111;
+}
+body.dark-mode{
+    background: #09090d;
+    color: #e7e7e7;
+}
+body.dark-mode #nav-section{
+    background: rgba(18, 18, 18, 0.92);
+    box-shadow: 0 22px 50px rgba(0, 0, 0, 0.38);
+}
+body.dark-mode #nav-section > nav > ul > li > a{
+    color: #f5f5f5;
+}
+body.dark-mode #nav-section > nav > ul > li > a:hover{
+    background: #f5f5f5;
+    color: #13131a;
+    border-color: #f5f5f5;
+}
+body.dark-mode #dark-light-toggle{
+    background: #1c1c1f;
+    color: #f5f5f5;
+    border-color: #f5f5f5;
+}
+body.dark-mode #dark-light-toggle:hover{
+    background: #f5f5f5;
+    color: #111;
+}
+body.dark-mode section{
+    background: #141418;
+    box-shadow: 0 24px 60px rgba(0, 0, 0, 0.45);
+}
+body.dark-mode #hero{
+    background: linear-gradient(150deg, #16161b 0%, #1f1f25 100%);
+}
+body.dark-mode #hero-section p,
+body.dark-mode #about p,
+body.dark-mode #contact p{
+    color: #c9c9d4;
+}
+body.dark-mode #about h3{
+    color: #d3d3de;
+}
+section{
+    max-width: 1080px;
+    margin: 30px auto;
+    padding: 56px 48px;
+    background: #ffffff;
+    border-radius: 28px;
+    box-shadow: 0 24px 60px rgba(20, 24, 40, 0.08);
+}
+#hero{
+    display: grid;
+    grid-template-columns: minmax(240px, 280px) 1fr;
+    gap: 48px;
+    align-items: center;
+    padding: 60px;
+    background: linear-gradient(150deg, #ffffff 0%, #f2f4fb 100%);
+    box-shadow: 0 24px 60px rgba(20, 24, 40, 0.08);
+}
+
+#hero > img{
+    width: 240px;
+    height: 240px;
+    border-radius: 36px;
+    object-fit: cover;
+    box-shadow: 0 28px 70px rgba(20, 24, 40, 0.14);
+}
+#hero-section h1{
+    font-size: clamp(2.6rem, 4vw, 3.8rem);
+    line-height: 1.02;
+    margin-bottom: 18px;
+}
+#hero-section p{
+    font-size: 1.05rem;
+    line-height: 1.85;
+    max-width: 700px;
+    color: #4b4b56;
+}
+#about h2,
+#projects h2,
+#contact h2{
+    font-size: 2.2rem;
+    margin-bottom: 18px;
+}
+#about h3{
+    font-size: 1.4rem;
+    margin-bottom: 18px;
+    color: #3a3a3a;
+}
+#about p,
+#projects p,
+#contact p{
+    font-size: 1rem;
+    line-height: 1.9;
+    color: #4c4c59;
+    max-width: 820px;
+}
+#projects{
+    padding-top: 40px;
+}
+form{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+    margin-top: 18px;
+}
+form > input,
+form > textarea{
+    padding: 16px 18px;
+    border: 1px solid #d5d7e0;
+    border-radius: 16px;
+    font-size: 1rem;
+    color: #222;
+    background: #f7f8fb;
+}
+form > input{
+    width: calc(50% - 9px);
+    min-width: 240px;
+}
+form > textarea{
+    width: 100%;
+    min-height: 170px;
+    resize: vertical;
+}
+form > button{
+    width: 140px;
+    padding: 14px 20px;
+    border: none;
+    border-radius: 999px;
+    background: #111;
+    color: #fff;
+    font-weight: 700;
+    cursor: pointer;
+    box-shadow: 0 18px 40px rgba(17, 17, 17, 0.18);
+    transition: transform 0.2s ease, background 0.25s ease;
+}
+form > button:hover{
+    transform: translateY(-2px);
+    background: #333;
+}
